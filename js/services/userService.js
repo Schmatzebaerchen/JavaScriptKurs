@@ -1,19 +1,19 @@
-class userService {
+class UserService {
 
 
   static init(){
-    var user=userService.createUser(1,"Herbert","xxxxxx","herbert@irgendwas.de","01.01.1900");
+    var user=UserService.createUser(1,"Herbert","xxxxxx","herbert@irgendwas.de","01.01.1900");
     //create Presentation of User
-    userService.displayUser(user);
-    userService.createTableHeader(user);
+    UserService.displayUser(user);
+    UserService.createTableHeader(user);
   }
 
 
 
 
 
-  static createUser(id,name,password,email){
-    var user=new User(id,name,password,email);
+  static createUser(id,name,password,email,birthday){
+    var user=new User(id,name,password,email,birthday);
     return user;
   }
 
